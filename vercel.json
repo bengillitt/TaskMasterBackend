@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
+  "routes": [
+    {
+      "src": "/getTodos",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/addTodo",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/removeTodo",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/signup",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/login",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    }
+  ]
+}
